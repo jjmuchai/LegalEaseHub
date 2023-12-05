@@ -76,7 +76,7 @@ def delete(request, id):
 
 def edit(request, id):
     case = Case.objects.get(id=id)
-    return render(request, 'edit.html', {'case': case})
+    return render(request, 'edit.html', {'case':case})
 
 
 def update(request, id):

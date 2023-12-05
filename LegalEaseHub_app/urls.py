@@ -15,7 +15,7 @@ urlpatterns = [
     path('add/', views.add, name='add'),
     path('show/', views.show, name='show'),
     path('delete/<int:id>', views.delete),
-    path('edit/<int:id>', views.edit),
+    path('edit/<int:id>', views.edit, name='edit'),
     path('update/<int:id>', views.update),
     path('pay/',views.pay, name='pay'),
     path('token/',views.token, name='token'),

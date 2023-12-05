@@ -54,29 +54,19 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="'about'" class="active">About</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'lawyers' %}">Lawyers</a></li>
+          <li><a href="{% url 'add' %}">Add Cases</a></li>
+          <li><a href="{% url 'show' %}">View Cases</a></li>
+          <li class="dropdown"><a href="#"><span>Case</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+                <li><a href="{% url 'upload' %}">Upload document</a></li>
+                <li><a href="{% url 'image' %}">View documents</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -91,7 +81,7 @@
 
         <h2>About</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{% url 'index' %}">Home</a></li>
           <li>About</li>
         </ol>
 
@@ -113,11 +103,11 @@
               <h3>Our Story</h3>
               <p>Negotiating settlements and agreements on behalf of clients. Acting as advocates for clients, representing their interests in legal matters.</p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commo</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Facilitating negotiations between parties to reach amicable resolutions.</span></li>
+                <li><i class="bi bi-check-circle"></i> <span></span>Providing clients with educational resources and information about their legal rights.</li>
+                <li><i class="bi bi-check-circle"></i> <span></span>Conducting training sessions for businesses on legal compliance and risk management.</li>
               </ul>
-              <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.</p>
+              <p>These functions highlight the diverse roles that law firms can play in addressing the legal needs of their clients across various practice areas.</p>
 
               <div class="watch-video d-flex align-items-center position-relative">
                 <i class="bi bi-play-circle"></i>
@@ -188,26 +178,25 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url({% static 'assets/img/alt-services.jpg' %});" data-aos="zoom-in" data-aos-delay="100"></div>
+          <div class="col-lg-6 img-bg" style="background-image: url({% static 'assets/img2/img_3.png' %});" data-aos="zoom-in" data-aos-delay="100"></div>
 
           <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
+            <h3></h3>
+              <p>These functions highlight the diverse roles that law firms can play in addressing the legal needs of their clients across various practice areas.</p>
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
               <i class="bi bi-easel flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
+                <h4><a href="" class="stretched-link"></a></h4>
+                   <p>These functions highlight the diverse roles that law firms can play in addressing the legal needs of their clients across various practice areas.</p>
+                      </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-patch-check flex-shrink-0"></i>
               <div>
-                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
+                <h4><a href="" class="stretched-link">Employment Law</a></h4>
+                  <p>These functions highlight the diverse roles that law firms can play in addressing the legal needs of their clients across various practice areas.</p>
+                </div>
             </div><!-- End Icon Box -->
 
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
@@ -518,11 +507,11 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>UpConstruction</h3>
+              <h3>LegalEaseHub</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
+                 Adams Arcade<br>
+                NRB 535022, KENYA<br><br>
+                <strong>Phone:</strong> +254 5589 55488 55<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links d-flex mt-3">
@@ -548,33 +537,33 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Legal Advice & Consultation</a></li>
+              <li><a href="#">Document Drafting and Review</a></li>
+              <li><a href="#">Litigation</a></li>
+              <li><a href="#">Dispute Resolution</a></li>
+              <li><a href="#"></a>Corporate and Business Law</li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
+            <h4>Regulatory Compliance</h4>
             <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
+              <li><a href="#">Client Advocacy</a></li>
+              <li><a href="#">Mediation and Negotiation</a></li>
+              <li><a href="#">Legal Education</a></li>
+              <li><a href="#">Legal Training</a></li>
+              <li><a href="#">Real Estate Transactions</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
+            <h4>Real Estate Transactions</h4>
             <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
+              <li><a href="#">Legal team</a></li>
+              <li><a href="#">Real Estate Transactions</a></li>
+              <li><a href="#">Mediation</a></li>
+              <li><a href="#">Negotiation</a></li>
+              <li><a href="#">Family Law</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -592,7 +581,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://bootstrapmade.com/">James muchai</a>
         </div>
       </div>
     </div>

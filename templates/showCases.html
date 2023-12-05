@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<h1 class="text-center">Active Cases</h1>
+<h1 class="text-center  btn btn-success form-control">Active Cases</h1>
 
 
 <table class="table table-info" style="margin: 0 auto">
@@ -35,7 +35,7 @@
         <td>{{ mycase.description }}</td>
         <td>{{ mycase.number }}</td>
         <td>
-            <a href="/edit/{{ product.id }}" class="btn btn-warning">EDIT</a>
+            <a href="/edit/{{ product.id }}" class="btn btn-primary">EDIT</a>
             <a href="/delete/{{ product.id }}" class="btn btn-danger">DELETE</a>
             <a href="{% url 'pay' %}" class="btn btn-outline-success">PAY</a>
         </td>
@@ -46,7 +46,7 @@
 </table>
 <br>
 
-<center><a href="{% url 'add' %}" class="btn btn-primary">Add Case</a></center>
+<center><a href="{% url 'add' %}" class="btn btn-warning">Add Case</a></center>
 
 </body>
 </html>
